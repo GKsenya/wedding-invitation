@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Caravan';
+  src: url('/fonts/Caravan.woff') format('woff2'), url('/fonts/Caravan.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoodVibes';
+  src: url('/fonts/GoodVibesPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('/fonts/Playfair.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'NotoSerif';
+  src: url('/fonts/NotoSerif.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('/fonts/NotoSans.ttf') format('truetype');
+}

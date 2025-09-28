@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  reactStrictMode: true,
+  trailingSlash: true,
+  experimental: {
+    optimizePackageImports: ['@mantine/hooks'],
+  },
 };
 
 export default nextConfig;
