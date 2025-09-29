@@ -59,10 +59,13 @@ export default function Home() {
         w='80vw'
       />
       <DressCodeSection text='Нам будет приятно, если Вы поддержите стилистику нашей свадьбы и выберите наряды в соответствии с цветовой палитрой' />
-
+      <Divider
+        color='dark.1'
+        w='80vw'
+      />
       <ContactSection
         text={'Мы просим Вас подтвердить своё присутствие на нашем торжестве, связавшись с нами в мессенджере'}
-        buttonProps={{ title: 'Написать в WhatsApp', href: '' }}
+        buttonProps={{ title: 'Написать в WhatsApp', href: 'https://wa.me/89235306633' }}
       />
       <InfoSection
         title='ЖДЕМ ВАС!'
@@ -72,7 +75,7 @@ export default function Home() {
         ]}
       />
       <Box
-        bg='#193318'
+        bg='#cba48b'
         h='20vh'
         w='100vw'
         mt='-5vh'
