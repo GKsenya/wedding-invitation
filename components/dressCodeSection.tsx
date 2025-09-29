@@ -1,10 +1,14 @@
-import { Box, Stack, Text } from '@mantine/core';
+'use client';
+
+import { Box, ColorSwatch, SimpleGrid, Stack, Text } from '@mantine/core';
 import { SectionWrapper } from './sectionWrapper';
 
 type DressCodeSectionProps = {
   text: string;
   imgSrc?: string[];
 };
+
+const colors = ['#FFFFFF', '#EBDBC8', '#92735C', '#A7AD89', '#697254', '#000000'];
 
 export const DressCodeSection = ({ text }: DressCodeSectionProps) => {
   return (
@@ -21,6 +25,23 @@ export const DressCodeSection = ({ text }: DressCodeSectionProps) => {
           {text}
         </Text>
       </Stack>
+      <SimpleGrid
+        cols={3}
+        mt='md'
+        spacing={{ base: 'md', sm: 'md' }}
+      >
+        {colors.map((color) => (
+          <ColorSwatch
+            withShadow={false}
+            bdrs={100}
+            bd='1px solid #d8d8d8'
+            size={60}
+            color={color}
+            key={color}
+            mx='auto'
+          />
+        ))}
+      </SimpleGrid>
     </SectionWrapper>
   );
 };

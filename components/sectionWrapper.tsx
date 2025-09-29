@@ -10,9 +10,10 @@ type SectionWrapperProps = {
   title: string;
   id: string;
   children: ReactNode;
+  contentProps?: BoxProps;
 } & BoxProps;
 
-export const SectionWrapper = ({ title, titleStyle, children, id, ...props }: SectionWrapperProps) => {
+export const SectionWrapper = ({ title, titleStyle, children, id, contentProps, ...props }: SectionWrapperProps) => {
   const isMobile = useMediaQuery(`(max-width: ${em(767)})`);
 
   return (
@@ -35,7 +36,12 @@ export const SectionWrapper = ({ title, titleStyle, children, id, ...props }: Se
       >
         {title}
       </Title>
-      <Box maw='680px'>{children}</Box>
+      <Box
+        maw='680px'
+        {...contentProps}
+      >
+        {children}
+      </Box>
     </Flex>
   );
 };

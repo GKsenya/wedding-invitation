@@ -17,9 +17,9 @@ export function HeroSection({ names, weddingDate, phrase, imageSrc }: HeroSectio
       direction={{ base: 'column', xl: 'row' }}
       align='center'
       ta='center'
-      gap={0}
-      px={{ base: '6vw', lg: '10vw' }}
-      py={{ base: '6vw', lg: '10vh' }}
+      gap='xs'
+      px={{ base: '0', lg: '10vw' }}
+      py={{ base: '0', lg: '10vh' }}
     >
       <Image
         style={{
@@ -30,7 +30,7 @@ export function HeroSection({ names, weddingDate, phrase, imageSrc }: HeroSectio
         mah={{ base: '75vh' }}
         src={imageSrc}
         alt='Фото молодоженов'
-        bdrs='sm'
+        bdrs={{ xl: 'sm' }}
       />
 
       <Stack
