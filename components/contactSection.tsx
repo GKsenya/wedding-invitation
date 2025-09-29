@@ -31,12 +31,12 @@ export const ContactSection = ({ text, buttonProps }: ContactSectionProps) => {
         <Button
           size='lg'
           mt='lg'
-          color='green.9'
+          color='#997B69'
           variant='outline'
           component='a'
           href={buttonProps.href}
           fz={{ base: 'sm', sm: 'md' }}
-          fw={200}
+          fw={300}
         >
           {buttonProps.title}
         </Button>

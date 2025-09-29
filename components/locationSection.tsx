@@ -3,11 +3,10 @@ import { SectionWrapper } from './sectionWrapper';
 
 type LocationSection = {
   text: string;
-  address: string;
-  link?: string;
+  address?: string;
 };
 
-export const LocationSection = ({ text, address, link }: LocationSection) => {
+export const LocationSection = ({ text, address }: LocationSection) => {
   return (
     <SectionWrapper
       titleStyle='uppercase'
@@ -21,12 +20,14 @@ export const LocationSection = ({ text, address, link }: LocationSection) => {
         >
           {text}
         </Text>
-        <Text
-          fw='200'
-          fz={{ base: 'sm', sm: 'md' }}
-        >
-          {address}
-        </Text>
+        {address && (
+          <Text
+            fw='200'
+            fz={{ base: 'sm', sm: 'md' }}
+          >
+            {address}
+          </Text>
+        )}
       </Stack>
     </SectionWrapper>
   );

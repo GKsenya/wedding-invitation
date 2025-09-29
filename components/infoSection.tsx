@@ -1,4 +1,4 @@
-import { Box, Stack, Text, Image } from '@mantine/core';
+import { Box, Stack, Text, Image, Flex } from '@mantine/core';
 import { SectionWrapper } from './sectionWrapper';
 
 type IntroSectionProps = {
@@ -12,12 +12,13 @@ export const InfoSection = ({ title, text }: IntroSectionProps) => {
     <SectionWrapper
       title={title}
       id='intro'
-      bg='#193318'
+      bg='#cba48b'
       c='white'
     >
       <Stack gap='sm'>
-        {renderText.map((item) => (
+        {renderText.map((item, index) => (
           <Text
+            key={index}
             fz={{ base: 'sm', sm: 'md' }}
             fw={200}
           >
