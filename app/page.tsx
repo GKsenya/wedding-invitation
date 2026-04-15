@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Image } from '@mantine/core';
 import { DressCodeSection, HeroSection, InfoSection, TimingSection, ContactSection } from '../components';
 import { FinalSection } from '../components/finalSection';
 import { LocationSection } from '../components/locationSection';
+import { WishesForGuests } from '../components/wishesForGuests';
 
 export default function Home() {
   return (
@@ -21,14 +22,10 @@ export default function Home() {
       <TimingSection
         items={[
           {
-            time: '10:45',
-            title: 'Добро пожаловать',
-            description: 'Сбор всех желающих разделить с нами этот особенный день у дверей ЗАГСа (пр. Ленина, 124)',
-          },
-          {
             time: '11:00',
             title: 'Торжественная регистрация',
-            description: 'Самое главное событие в нашей жизни',
+            description:
+              'Самое главное событие в нашей жизни. Будем рады видеть вас в ЗАГСе по адресу: пр. Ленина, 124',
           },
           {
             time: '12:00',
@@ -42,8 +39,13 @@ export default function Home() {
           },
           {
             time: '14:00',
-            title: <>Праздничный банкет</>,
+            title: 'Праздничный банкет',
             description: 'Прибытие молодожёнов, начало торжества, тёплые поздравления, красивая музыка, вкусная еда',
+          },
+          {
+            time: '22:00',
+            title: 'Завершение торжества',
+            description: 'Финальные аккорды нашего праздника. Время теплых объятий и слов благодарности',
           },
         ]}
       />
@@ -65,7 +67,17 @@ export default function Home() {
         color='dark.1'
         w='80vw'
       />
-      <ContactSection text='Мы просим Вас подтвердить своё присутствие на нашем торжестве до 01/05/2026' />
+      <WishesForGuests
+        text={[
+          'Просим вас воздержаться от покупки цветов: сразу после торжества мы отправляемся в свадебное путешествие и, к сожалению, не успеем насладиться их красотой.',
+          'Будем очень признательны, если вместо букетов вы сделаете вклад в бюджет нашей семьи — это станет для нас самым нужным и ценным подарком.',
+        ]}
+      />
+      <Divider
+        color='dark.1'
+        w='80vw'
+      />
+      <ContactSection text='Мы просим Вас подтвердить своё присутствие на нашем торжестве до 01/06/2026' />
       <FinalSection
         title='ЖДЕМ ВАС!'
         text={[
