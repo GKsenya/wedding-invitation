@@ -54,7 +54,8 @@ export default function Home() {
         w='80vw'
       />
       <LocationSection
-        address='Центральная улица, 3, д. Журавлево, Центральная улица, 3, база отдыха Журавель'
+        address='д. Журавлево, Центральная улица д. 3'
+        name='База отдыха «Журавель»'
         mapSrc='/images/map4.jpeg'
         mapLink='https://2gis.ru/kemerovo/firm/70000001006360542?m=86.142178%2C55.341608%2F12.87'
       />
